@@ -1,22 +1,15 @@
+import Product from "../../Components/Product/Product";
 
-
-interface MainProps{
-  products : any[]
+interface MainProps {
+  products: any[];
 }
 
-
-export default function MainPage({products} : MainProps) {
-
+export default function MainPage({ products }: MainProps) {
   console.log(products[0]);
-  
 
   return (
     <div>
-      {products.map((item, index) => {
-        return <div key={index}>
-          {item.title}
-        </div>
-      })}
+      <Product products={products} />
     </div>
-  )
+  );
 }
