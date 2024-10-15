@@ -1,3 +1,17 @@
 .product{
-    
+    background-color: rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.card{
+max-width: 300px;
+background-color: rgb(156, 156, 156);
+
+}
+
+.img{
+    max-width: 260px;
+background-color: rgb(43, 43, 43);
 }

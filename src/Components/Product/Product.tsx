@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom";
 import style from "./Product.module.css"
 
 interface MainProps{
-  products : any[]
+  products : Product[]
 }
+interface Product {
+  title: string;
+  images: string; 
+  price: number;
+}
+
 
 
 
@@ -13,11 +18,12 @@ export default function Product ({products} : MainProps){
 
   return (
     <div>
-      <Link to="/" className={style.product} />
-      <div>
+      <div className={style.product}>
       {products.map((item, index) => {
-        return <div key={index}>
-          {item.title}
+        return <div key={index} className={style.card}>
+          <img src={item.images} className={style.img}></img>
+          <p>{item.title}</p>
+          <p>{item.price}</p>
         </div>
       })}
       </div>
