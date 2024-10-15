@@ -1,9 +1,9 @@
 import style from "./Product.module.css"
 
 interface MainProps{
-  products : Product[]
+  products : TProduct[]
 }
-interface Product {
+interface TProduct {
   title: string;
   images: string; 
   price: number;
