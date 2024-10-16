@@ -6,7 +6,7 @@ description: string,
 dimensions: TDimension,
 discountPercentage: number,
 id: number,
-images: string[],
+images: string,
 meta: Tmeta,
 minimumOrderQuantity: number,
 price: number,
@@ -20,7 +20,7 @@ tags: string[],
 thumbnail: string,
 title: string,
 warrantyInformation: string,
-weight: 2,
+weight: number,
 }
 
 type TDimension = {
