@@ -1,23 +1,13 @@
 import Product from "../../Components/Product/Product";
 import Modal from "../../Components/Modal/Modal";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { getProductsState } from "../../Store/Slices/Products/Index";
+import { TProduct } from "../../Services/Types/Components";
 
-
-interface MainProps{
-  products : TProduct[]
-}
-interface TProduct {
-  title: string;
-  images: string; 
-  price: number;
-}
-
-
-export default function MainPage({ products }: MainProps) {
-  console.log(products[0]);
-
-const [modalActive, setMoadlActive] =  useState(true);
-
+export default function MainPage() {
+  const products : TProduct[] = useSelector((state) => state.productSlice.products)
+  const [modalActive, setMoadlActive] =  useState(true);
 
   return (
     <div>

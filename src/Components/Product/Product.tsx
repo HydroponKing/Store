@@ -1,20 +1,11 @@
 import style from "./Product.module.css"
+import { TProduct } from "../../Services/Types/Components";
 
 interface MainProps{
   products : TProduct[]
 }
-interface TProduct {
-  title: string;
-  images: string; 
-  price: number;
-}
-
-
-
 
 export default function Product ({products} : MainProps){
-
-  console.log(products[0]);
 
   return (
     <div className={style.wrapper}>
