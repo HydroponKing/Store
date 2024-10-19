@@ -1,7 +1,6 @@
 import style from "./Modal.module.css";
 
-
-export default function Modal({ active, setActive }) {
+export default function Modal({ active, setActive, children }) {
   return (
     <div
       className={`${style.modal} ${active ? style.active : ""}`}
@@ -10,7 +9,9 @@ export default function Modal({ active, setActive }) {
       <div
         className={style.modal__content}
         onClick={(e) => e.stopPropagation()}
-      ></div>
+      >
+        {children}
+      </div>
     </div>
   );
 }
