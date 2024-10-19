@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import style from "./LoginModal.module.css";
+import type { LoginModal, ModalProps } from "../../Services/Types/Components";
 
-export default function LoginModal() {
+export default function LoginModal({ setActive }:ModalProps) {
   return (
     <div>
       <div className={style.loginForm}>
@@ -26,7 +28,9 @@ export default function LoginModal() {
         <button type="submit" className={style.submitButton}>
         log in
         </button>
+        <Link to='/register' onClick={()=> setActive(false)}>
         <p className={style.loginLink}>Don't you have an account? Register here!</p>
+        </Link>
       </div>
     </div>
   );

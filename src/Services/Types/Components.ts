@@ -53,3 +53,7 @@ export type ModalProps = {
   setActive: Dispatch<SetStateAction<boolean>>;
   children: ReactNode;
 };
+
+export type LoginModal ={
+  setActive: Dispatch<SetStateAction<boolean>>;
+}

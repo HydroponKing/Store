@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./RegisterPage.module.css";
 
 export default function RegisterPage() {
@@ -35,6 +36,14 @@ export default function RegisterPage() {
         <button type="submit" className={style.submitButton}>
           Register
         </button>
+      </div>
+      <div>
+        <Link to='/'>
+        <button className={style.backBtn}>
+          <img className={style.backBtn__img} src="src/assets/arrow.svg" alt="Стрелка" />
+          Back to the shop
+        </button>
+        </Link>
       </div>
     </div>
   );
