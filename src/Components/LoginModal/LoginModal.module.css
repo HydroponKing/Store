@@ -40,6 +40,10 @@
 }
 
 .loginLink{
-  padding-top: 40px;
-  font-size: 11px;
+  width: 180px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 12px;
+  color: #858585;
+  cursor: pointer;
 }

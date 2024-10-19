@@ -4,11 +4,11 @@ export default function LoginModal() {
   return (
     <div>
       <div className={style.loginForm}>
-        <h2 className={style.loginHeading}>Log in</h2>
+        <h2 className={style.loginHeading}>ShopName</h2>
         <div className={style.formGroup}>
           <input
             className={style.loginInput}
-            placeholder="Электронная почта"
+            placeholder="Email"
             type="mail"
             id="username"
             name="username"
@@ -17,14 +17,14 @@ export default function LoginModal() {
         <div className={style.formGroup}>
           <input
             className={style.loginInput}
-            placeholder="Пароль"
+            placeholder="Password"
             type="password"
             id="password"
             name="password"
           />
         </div>
         <button type="submit" className={style.submitButton}>
-          Войти
+        log in
         </button>
         <p className={style.loginLink}>Don't you have an account? Register here!</p>
       </div>
