@@ -11,7 +11,8 @@ import Modal from "../Modal/Modal"
 
 function App() {
   const dispatch = useDispatch<AppDispatch>()
-  const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
+
 
   useEffect(() => {
     dispatch(getProductsThunk())
