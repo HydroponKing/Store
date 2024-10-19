@@ -1,6 +1,10 @@
 import style from "./Modal.module.css";
+import { ModalProps } from "../../Services/Types/Components";
 
-export default function Modal({ active, setActive, children }) {
+
+
+
+export default function Modal({ active, setActive, children }: ModalProps) {
   return (
     <div
       className={`${style.modal} ${active ? style.active : ""}`}
@@ -14,4 +18,4 @@ export default function Modal({ active, setActive, children }) {
       </div>
     </div>
   );
-}
+};

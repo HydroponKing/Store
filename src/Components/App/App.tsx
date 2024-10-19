@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import { AppDispatch } from "../../Store/Store"
 import { getProductsThunk } from "../../Store/Slices/Products/service"
-import Modal from "../Modal/Modal"
+import  Modal from "../Modal/Modal"
 import LoginModal from "../LoginModal/LoginModal"
 
 function App() {
