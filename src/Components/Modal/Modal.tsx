@@ -4,7 +4,7 @@ import { ModalProps } from "../../Services/Types/Components";
 
 
 
-export default function Modal({ active, setActive, children }: ModalProps) {
+export default function Modal({ active, setActive, children }: ModalProps): JSX.Element {
   return (
     <div
       className={`${style.modal} ${active ? style.active : ""}`}
