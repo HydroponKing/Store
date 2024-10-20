@@ -1,22 +1,13 @@
+import Product from "../../Components/Product/Product";
+import { useSelector } from "react-redux";
+import { getProductsState } from "../../Store/Slices/Products/Index";
+import { TProduct } from "../../Services/Types/Components";
 
-
-interface MainProps{
-  products : any[]
-}
-
-
-export default function MainPage({products} : MainProps) {
-
-  console.log(products[0]);
-  
-
+export default function MainPage() {
+  const products : TProduct[] = useSelector((state) => state.productSlice.products)
   return (
     <div>
-      {products.map((item, index) => {
-        return <div key={index}>
-          {item.title}
-        </div>
-      })}
+      <Product products={products} />
     </div>
-  )
+  );
 }

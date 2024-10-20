@@ -1,0 +1,80 @@
+.registerModal {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../assets/img/backGr.jpg");
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+
+.registerForm {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url("../../../assets/img/backGr.jpg");
+    background-size: 600%, contain;
+
+  }
+  
+  .registerHeading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .registerGroup {
+    margin-bottom: 15px;
+  }
+  
+  .registerInput{
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 1px solid #636363;
+    font-size: 16px;
+  }
+  
+  .submitButton {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: backgroud-color 0.3s, transform 0.2s ease;
+  }
+  
+  .submitButton:hover{
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  .backBtn{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  .backBtn:hover{
+    transform: translateX(-16px);
+    background-color: #d8d8d8;
+  }
+
+  .backBtn__img{
+    padding-top: 5px;
+    width: 22px;
+    height: 20px;
+    padding-right: 8px;
+  }
