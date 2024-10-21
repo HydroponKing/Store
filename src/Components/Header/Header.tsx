@@ -7,8 +7,10 @@ export default function Header({onLoginClick}:HeaderProps ) {
     <div className={style.header}>
       <Link to='/' className={style.logo}/>
       <div className={style.container}>
-        <button className={style.btnCart} onClick={onLoginClick}>Cart</button>
-        <button className={style.btn}>Login</button> 
+        <Link to='login'>
+          <img src='src/assets/img/cart.scg'></img>
+        </Link>
+        <button className={style.btn} onClick={onLoginClick}>Login</button> 
       </div>
     </div>
   )

@@ -9,7 +9,8 @@ import { AppDispatch } from "../../Store/Store";
 import { getProductsThunk } from "../../Store/Slices/Products/service";
 import Modal from "../Modal/Modal";
 import LoginModal from "../LoginModal/LoginModal";
-import RegisterPage from "../../Pages/MainPage/RegisterPage/RegisterPage";
+import RegisterPage from "../../Pages/RegisterPage/RegisterPage";
+import LoginPage from "../../Pages/LoginPage/LoginPage";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -30,6 +31,7 @@ function App() {
         <LoginModal />
       </Modal>
       <Routes>
+        <Route path="/login" element={<LoginPage/>}/>
         <Route path="/register" element={<RegisterPage/>} />
         <Route path="/" element={<MainPage />} />
       </Routes>
