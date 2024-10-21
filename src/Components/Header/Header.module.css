@@ -11,6 +11,20 @@
     background-image: url(/src/assets/Logo.svg);
     background-size: cover;
 }
+
+.btnCart {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(206, 206, 206);
+  cursor: pointer;
+  margin-right: 10px;
+}
+.btnCart:hover{
+  background-color: #b7b7b7;
+}
+
 .btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -20,7 +34,6 @@
     color: #fff;
     cursor: pointer;
   }
-  
   .btn:hover{
     background-color: #333;
   }
