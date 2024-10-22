@@ -1,4 +1,4 @@
-import style from "./LoginModal.module.css";
+import style from "./CartModal.module.css";
 import type { LoginModal, ModalProps } from "../../Services/Types/Components";
 
 export default function LoginModal({ setActive }:ModalProps) {

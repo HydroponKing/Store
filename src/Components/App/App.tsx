@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../Store/Store";
 import { getProductsThunk } from "../../Store/Slices/Products/service";
 import Modal from "../Modal/Modal";
-import LoginModal from "../LoginModal/LoginModal";
+import LoginModal from "../CartModal/CartModal";
 import RegisterPage from "../../Pages/RegisterPage/RegisterPage";
 import LoginPage from "../../Pages/LoginPage/LoginPage";
 
